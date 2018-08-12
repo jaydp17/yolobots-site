@@ -6,8 +6,24 @@
   "bugs": {
     "url": "https://github.com/jaydp17/yolobots-site/issues"
   },
+  "dependencies": {
+    "gatsby": "next",
+    "gatsby-plugin-manifest": "next",
+    "gatsby-plugin-offline": "next",
+    "gatsby-plugin-react-helmet": "next",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "gatsby-cli": "^1.1.58",
+    "prettier": "1.14.2"
+  },
   "homepage": "https://github.com/jaydp17/yolobots-site#readme",
-  "keywords": [],
+  "keywords": [
+    "gatsby",
+    "yolobots"
+  ],
   "license": "MIT",
   "main": "index.js",
   "repository": {
@@ -15,6 +31,9 @@
     "url": "git+https://github.com/jaydp17/yolobots-site.git"
   },
   "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
