@@ -7,6 +7,8 @@ import PhoneSlider from './PhoneSlider';
 
 const BaseLeftElement = styled.div`
   text-align: right;
+  padding-left: 15%;
+  padding-right: 5%;
 `;
 
 const GridContainer = styled.div`
@@ -17,6 +19,13 @@ const GridContainer = styled.div`
 const PhoneElement = styled.div`
   grid-row: 1 / 4;
   grid-column: 2;
+  text-align: center;
+`;
+
+const TagLine = styled.p`
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #767d89;
 `;
 
 export default () => {
@@ -29,13 +38,13 @@ export default () => {
         <PhoneSlider />
       </PhoneElement>
       <BaseLeftElement>
-        <p>
+        <TagLine>
           With YoloBots you can get stuff done fast without the need to have hundreds of apps for
           every little task.
-        </p>
+        </TagLine>
       </BaseLeftElement>
       <BaseLeftElement>
-        <img src={googlePlayBadge} width="250" alt="get on google play button"/>
+        <img src={googlePlayBadge} width="250" alt="get on google play button" />
       </BaseLeftElement>
     </GridContainer>
   );
