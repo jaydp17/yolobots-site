@@ -1,6 +1,7 @@
 import React from 'react';
 import FirstFold from '../components/FirstFold';
 import styled from 'styled-components';
+import ServicesFold from '../components/ServicesFold';
 
 const MeaningFulContent = styled.div`
   margin-top: 80px;
@@ -24,6 +25,7 @@ export default () => {
     <div>
       <MeaningFulContent>
         <FirstFold />
+        <ServicesFold />
       </MeaningFulContent>
     </div>
   );
