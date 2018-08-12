@@ -11,6 +11,10 @@ const BaseLeftElement = styled.div`
   padding-right: 5%;
 `;
 
+const LogoElement = BaseLeftElement.extend`
+  margin-top: 70px;
+`;
+
 const GridContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -31,9 +35,9 @@ const TagLine = styled.p`
 export default () => {
   return (
     <GridContainer>
-      <BaseLeftElement>
+      <LogoElement>
         <img src={yoloBotsLogo} width="250" alt="app logo" />
-      </BaseLeftElement>
+      </LogoElement>
       <PhoneElement>
         <PhoneSlider />
       </PhoneElement>
