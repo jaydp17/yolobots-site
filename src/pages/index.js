@@ -1,5 +1,10 @@
 import React from 'react';
+import FirstFold from '../components/FirstFold';
 
 export default () => {
-  return <h1>Hi people!</h1>;
+  return (
+    <div>
+      <FirstFold />
+    </div>
+  );
 };
