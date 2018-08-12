@@ -1,0 +1,20 @@
+{
+  "name": "yolobots-site",
+  "description": "The reincarnation 👻 of YoloBots frontend",
+  "version": "0.1.0",
+  "author": "Jaydeep Solanki <jaydp17@gmail.com> (https://jaydp.com)",
+  "bugs": {
+    "url": "https://github.com/jaydp17/yolobots-site/issues"
+  },
+  "homepage": "https://github.com/jaydp17/yolobots-site#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaydp17/yolobots-site.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
