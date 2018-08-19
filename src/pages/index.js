@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import ServicesFold from '../components/ServicesFold';
 import ThirdFold from '../components/ThirdFold';
 import Hr from '../components/Hr';
+import Footer from '../components/Footer';
 
 const MeaningFulContent = styled.div`
   margin-top: 80px;
@@ -30,6 +31,7 @@ export default () => {
         <ServicesFold />
         <Hr />
         <ThirdFold />
+        <Footer />
       </MeaningFulContent>
     </div>
   );
