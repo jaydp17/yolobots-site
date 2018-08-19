@@ -14,6 +14,15 @@ const Wrapper = styled.div`
   justify-content: center;
 `;
 
+const Heading = styled.p`
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 1.5em;
+  color: #767d89;
+  display: block;
+  text-align: center;
+`;
+
 export default () => {
   const serviceRow1 = [
     {
@@ -46,6 +55,7 @@ export default () => {
   ];
   return (
     <div>
+      <Heading>Some of the services available in app</Heading>
       <Wrapper>
         {serviceRow1.map(service => (
           <Service {...service} />
