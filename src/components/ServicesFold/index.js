@@ -10,10 +10,12 @@ import yoBotLogo from '../../images/yobotLogo.png';
 
 const Wrapper = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export default () => {
-  const services = [
+  const serviceRow1 = [
     {
       image: pnrBotLogo,
       text: 'Check & Get notified when your PNR status changes',
@@ -29,6 +31,8 @@ export default () => {
       text: 'Compare Cabs like ola and Uber for best fare or least arrival time',
       altText: 'Cab bot icon',
     },
+  ];
+  const serviceRow2 = [
     {
       image: seriesBotLogo,
       text: 'Notifies you when the next episode of your favorite Tv Series',
@@ -41,10 +45,17 @@ export default () => {
     },
   ];
   return (
-    <Wrapper>
-      {services.map(service => (
-        <Service {...service} />
-      ))}
-    </Wrapper>
+    <div>
+      <Wrapper>
+        {serviceRow1.map(service => (
+          <Service {...service} />
+        ))}
+      </Wrapper>
+      <Wrapper>
+        {serviceRow2.map(service => (
+          <Service {...service} />
+        ))}
+      </Wrapper>
+    </div>
   );
 };
