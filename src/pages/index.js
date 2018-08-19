@@ -2,6 +2,8 @@ import React from 'react';
 import FirstFold from '../components/FirstFold';
 import styled from 'styled-components';
 import ServicesFold from '../components/ServicesFold';
+import ThirdFold from '../components/ThirdFold';
+import Hr from '../components/Hr';
 
 const MeaningFulContent = styled.div`
   margin-top: 80px;
@@ -26,6 +28,8 @@ export default () => {
       <MeaningFulContent>
         <FirstFold />
         <ServicesFold />
+        <Hr />
+        <ThirdFold />
       </MeaningFulContent>
     </div>
   );
